@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "COMEBACKBUCKET (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "COMEBACKBUCKET (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
