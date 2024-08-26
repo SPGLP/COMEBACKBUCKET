@@ -1,10 +1,24 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using COMEBACKBUCKET.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Navigation;
 
 namespace COMEBACKBUCKET.ViewModels;
 
 public partial class MainViewModel : ObservableRecipient
 {
+
+    [ObservableProperty]
+    private Type _PageNavTo;                // 用于指定要导航到的目标（页面）
+
     public MainViewModel()
     {
+        _PageNavTo = typeof(DataManagerPage);
     }
+
+    public void SetPageNavTo(Type typePage)
+    {
+        PageNavTo = typePage;
+    }
+
 }

@@ -19,19 +19,13 @@ public sealed partial class MainPage : Page
         InitFrame();
     }
 
-
-    /// <summary>
-    /// InitNavText() : void
-    /// 作用：用于初始化导航栏的项目和文本
-    /// </summary>
-
     /// <summary>
     /// InitFrame()
     /// 作用：用于初始化APP页面框架的初始内容（页面）
     /// </summary>
     public void InitFrame()
     {
-        APPFrame.Navigate(typeof(DataManagerPage));
+        APPFrame.Navigate(ViewModel.PageNavTo);
     }
 
     private void APPNav_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
@@ -42,23 +36,22 @@ public sealed partial class MainPage : Page
         {
             navOptions.IsNavigationStackEnabled = false;
         }
-        Type pageType;
         if (args.InvokedItemContainer == NavItem_DM)
         {
-            pageType = typeof(DataManagerPage);
+            ViewModel.PageNavTo = typeof(DataManagerPage);
         }
         else if (args.InvokedItemContainer == NavItem_SQLE)
         {
-            pageType = typeof(SQLEditorPage);
+            ViewModel.PageNavTo = typeof(SQLEditorPage);
         }
         else if (args.InvokedItemContainer == NavItem_VSD)
         {
-            pageType = typeof(VisualDataPage);
+            ViewModel.PageNavTo = typeof(VisualDataPage);
         }
         else
         {
-            pageType = typeof (SettingsPage);
+            ViewModel.PageNavTo = typeof (SettingsPage);
         }
-        APPFrame.NavigateToType(pageType, null, navOptions);
+        APPFrame.NavigateToType(ViewModel.PageNavTo, null, navOptions);
     }
 }
