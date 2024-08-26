@@ -71,6 +71,11 @@
                     Margin="{StaticResource XSmallTopMargin}"
                     Style="{ThemeResource BodyTextBlockStyle}" />
                 <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
+                <TextBlock 
+                    Margin="{StaticResource XSmallTopMargin}" 
+                    FontStyle="Oblique" 
+                    Foreground="Red"
+                    Text="本产品正处于 Alpha 测试中，产品稳定性和功能性极差，请使用者知悉！" />
             </StackPanel>
         </StackPanel>
     </Grid>

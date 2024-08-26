@@ -158,7 +158,7 @@
     <value>管理数据，轻松玩意</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>管理数据，轻松玩意</value>
+    <value>本产品是一款基于 WinUI3 和 SqlSurge ORM 打造的可视化数据库管理工具。基于 Apache 2.0 协议进行开源分发。</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>Privacy Statement</value>
