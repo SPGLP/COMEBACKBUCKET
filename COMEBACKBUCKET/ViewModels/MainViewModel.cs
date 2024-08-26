@@ -1,7 +1,5 @@
 ﻿using COMEBACKBUCKET.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Navigation;
 
 namespace COMEBACKBUCKET.ViewModels;
 

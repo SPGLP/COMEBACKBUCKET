@@ -20,7 +20,7 @@
                 <NavigationViewItem x:Name="NavItem_VSD" x:Uid="NAV_ITEM_3" />
             </NavigationView.MenuItems>
 
-            <Frame x:Name="APPFrame" />
+            <Frame x:Name="APPFrame" Padding="10"/>
         </NavigationView>
     </Grid>
 </Page>
