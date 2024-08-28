@@ -14,24 +14,47 @@
         </Grid.RowDefinitions>
 
         <MenuBar x:Name="MB_DM" Grid.Row="1">
-            <MenuBarItem Title="File">
+            <MenuBarItem x:Uid="DM_Menu_Connection">
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Delete" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Edit" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_On" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Off" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_CheckAll" />
+                <MenuFlyoutItem x:Uid="DM_Menu__Connection_Flush" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_ExitAPP" />
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Workspace">
                 <MenuFlyoutItem Text="New"/>
                 <MenuFlyoutItem Text="Open..."/>
                 <MenuFlyoutItem Text="Save"/>
                 <MenuFlyoutItem Text="Exit"/>
             </MenuBarItem>
 
-            <MenuBarItem Title="Edit">
+            <MenuBarItem x:Uid="DM_Menu_Edit">
                 <MenuFlyoutItem Text="Undo"/>
                 <MenuFlyoutItem Text="Cut"/>
                 <MenuFlyoutItem Text="Copy"/>
                 <MenuFlyoutItem Text="Paste"/>
             </MenuBarItem>
 
-            <MenuBarItem Title="Help">
-                <MenuFlyoutItem Text="About"/>
+            <MenuBarItem x:Uid="DM_Menu_Backup">
+                <MenuFlyoutItem Text="Backup"/>
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Script">
+                <MenuFlyoutItem Text="Script"/>
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Filter">
+                <MenuFlyoutItem Text="Filter"/>
             </MenuBarItem>
         </MenuBar>
+        
         <TextBlock
             Grid.Row="0"
             x:Uid="DataManager_Title"
