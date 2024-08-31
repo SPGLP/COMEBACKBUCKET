@@ -8,18 +8,103 @@
 
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
-            <RowDefinition Height="48" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <MenuBar x:Name="MB_DM" Grid.Row="1">
+            <MenuBarItem x:Uid="DM_Menu_Connection">
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Delete" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Edit" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_On" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Off" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_CheckAll" />
+                <MenuFlyoutItem x:Uid="DM_Menu__Connection_Flush" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_Filter" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_any_ExitAPP" />
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Workspace">
+                <MenuFlyoutItem x:Uid="DM_Menu_Workspace_Open" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Workspace_Save" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Workspace_SaveOther" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Workspace_Clear" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_any_ExitAPP" />
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Edit">
+                <MenuFlyoutItem x:Uid="DM_Menu_Edit_Undo" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Edit_Redo" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Edit_Copy" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Edit_Paste" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_any_ExitAPP" />
+            </MenuBarItem>
+
+            <MenuBarItem x:Uid="DM_Menu_Backup">
+                <MenuFlyoutItem x:Uid="DM_Menu_Backup_Backup" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Backup_Recovery" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_Backup_Output" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_any_ExitAPP" />
+            </MenuBarItem>
+
+            <!--
+            <MenuBarItem x:Uid="DM_Menu_Script">
+                <MenuFlyoutItem Text="Script"/>
+            </MenuBarItem>
+            -->
+
+            <MenuBarItem x:Uid="DM_Menu_Filter">
+                <MenuFlyoutItem x:Uid="DM_Menu_Filter_ByNum" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Filter_ByText" />
+                <MenuFlyoutSeparator />
+                <MenuFlyoutItem x:Uid="DM_Menu_any_ExitAPP" />
+            </MenuBarItem>
+        </MenuBar>
+        
         <TextBlock
             Grid.Row="0"
             x:Uid="DataManager_Title"
             Style="{StaticResource PageTitleStyle}" />
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
+            <Grid x:Name="G_WorkSpace">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+                
+                <TreeView 
+                    x:Name="TV_Connections" 
+                    Background="Green"
+                    AllowDrop="True" />
+                <Grid Grid.Column="1">
+                    <Grid x:Name="TableArea" Background="Blue">
+                        <TextBlock>表区域</TextBlock>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <Grid x:Name="OprationArea" Background="Gainsboro">
+                        <TextBlock>操作区域</TextBlock>
+                    </Grid>
+                </Grid>
+                
+
+            </Grid>
             
         </Grid>
-        
     </Grid>
 </Page>
