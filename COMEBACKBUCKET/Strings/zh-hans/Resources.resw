@@ -183,7 +183,7 @@
     <value>设置</value>
   </data>
   <data name="DM_Menu_Backup.Title" xml:space="preserve">
-    <value>数据备份</value>
+    <value>备份与恢复</value>
   </data>
   <data name="DM_Menu_Connection.Title" xml:space="preserve">
     <value>连接</value>
@@ -209,7 +209,7 @@
   <data name="DM_Menu_Edit.Title" xml:space="preserve">
     <value>编辑</value>
   </data>
-  <data name="DM_Menu_ExitAPP.Text" xml:space="preserve">
+  <data name="DM_Menu_any_ExitAPP.Text" xml:space="preserve">
     <value>退出</value>
   </data>
   <data name="DM_Menu_Filter.Title" xml:space="preserve">
@@ -223,5 +223,50 @@
   </data>
   <data name="DM_Menu__Connection_Flush.Text" xml:space="preserve">
     <value>刷新连接</value>
+  </data>
+  <data name="DM_Menu_Backup_Backup.Text" xml:space="preserve">
+    <value>数据备份</value>
+  </data>
+  <data name="DM_Menu_Backup_Output.Text" xml:space="preserve">
+    <value>数据导出</value>
+  </data>
+  <data name="DM_Menu_Backup_Recovery.Text" xml:space="preserve">
+    <value>数据恢复</value>
+  </data>
+  <data name="DM_Menu_Connection_Filter.Text" xml:space="preserve">
+    <value>筛选连接</value>
+  </data>
+  <data name="DM_Menu_Edit_Copy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="DM_Menu_Edit_Cut.Text" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="DM_Menu_Edit_Paste.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="DM_Menu_Edit_Redo.Text" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="DM_Menu_Edit_Undo.Text" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="DM_Menu_Filter_ByNum.Text" xml:space="preserve">
+    <value>通过数量筛选</value>
+  </data>
+  <data name="DM_Menu_Filter_ByText.Text" xml:space="preserve">
+    <value>通过文字筛选</value>
+  </data>
+  <data name="DM_Menu_Workspace_Clear.Text" xml:space="preserve">
+    <value>清空当前工作区</value>
+  </data>
+  <data name="DM_Menu_Workspace_Open.Text" xml:space="preserve">
+    <value>打开工作区记录文件</value>
+  </data>
+  <data name="DM_Menu_Workspace_Save.Text" xml:space="preserve">
+    <value>保存当前工作区</value>
+  </data>
+  <data name="DM_Menu_Workspace_SaveOther.Text" xml:space="preserve">
+    <value>将当前工作区另存为</value>
   </data>
 </root>
