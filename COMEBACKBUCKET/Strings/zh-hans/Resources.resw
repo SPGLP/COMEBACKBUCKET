@@ -209,13 +209,13 @@
   <data name="DM_Menu_Edit.Title" xml:space="preserve">
     <value>编辑</value>
   </data>
-  <data name="DM_Menu_any_ExitAPP.Text" xml:space="preserve">
+  <data name="Any_Menu_any_ExitAPP.Text" xml:space="preserve">
     <value>退出</value>
   </data>
   <data name="DM_Menu_Filter.Title" xml:space="preserve">
     <value>数据筛选</value>
   </data>
-  <data name="DM_Menu_Script.Title" xml:space="preserve">
+  <data name="SQLE_Menu_Script.Title" xml:space="preserve">
     <value>脚本</value>
   </data>
   <data name="DM_Menu_Workspace.Title" xml:space="preserve">
@@ -268,5 +268,53 @@
   </data>
   <data name="DM_Menu_Workspace_SaveOther.Text" xml:space="preserve">
     <value>将当前工作区另存为</value>
+  </data>
+  <data name="SQLE_Menu_Edit.Title" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="SQLE_Menu_Edit_Copy.Text" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="SQLE_Menu_Edit_Cut.Text" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="SQLE_Menu_Edit_Paste.Text" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="SQLE_Menu_Edit_Redo.Text" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="SQLE_Menu_Edit_Undo.Text" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="SQLE_Menu_File.Title" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="SQLE_Menu_File_New.Text" xml:space="preserve">
+    <value>新建 SQL 文件</value>
+  </data>
+  <data name="SQLE_Menu_File_Open.Text" xml:space="preserve">
+    <value>打开 SQL 文件</value>
+  </data>
+  <data name="SQLE_Menu_File_Save.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="SQLE_Menu_FIle_SaveAll.Text" xml:space="preserve">
+    <value>全部保存</value>
+  </data>
+  <data name="SQLE_Menu_File_SaveOther.Text" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="SQLE_Menu_Script_LookOutput.Text" xml:space="preserve">
+    <value>查阅输出报告</value>
+  </data>
+  <data name="SQLE_Menu_Script_RunAll.Text" xml:space="preserve">
+    <value>运行所有语句</value>
+  </data>
+  <data name="SQLE_Menu_Script_RunFocus.Text" xml:space="preserve">
+    <value>运行选定区域语句</value>
+  </data>
+  <data name="SQLE_Menu_Script_SaveOutput.Text" xml:space="preserve">
+    <value>导出输出报告</value>
   </data>
 </root>
