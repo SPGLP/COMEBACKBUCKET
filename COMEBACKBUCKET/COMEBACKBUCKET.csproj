@@ -15,8 +15,8 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <DefaultLanguage>zh-hans</DefaultLanguage>
-    <AssemblyVersion>0.0.6.2</AssemblyVersion>
-    <FileVersion>0.0.6.2</FileVersion>
+    <AssemblyVersion>0.1.10.0</AssemblyVersion>
+    <FileVersion>0.1.10.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +28,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240627000" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.167" />
     <PackageReference Include="WinUIEx" Version="2.3.4" />
   </ItemGroup>
 

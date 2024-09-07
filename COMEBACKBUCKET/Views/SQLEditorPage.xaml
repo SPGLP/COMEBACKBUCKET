@@ -8,7 +8,8 @@
 
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
-            <RowDefinition Height="48" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
@@ -18,8 +19,68 @@
             Style="{StaticResource PageTitleStyle}" />
 
         <Grid Grid.Row="1">
-            
+            <MenuBar>
+                <MenuBarItem x:Uid="SQLE_Menu_File">
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_File_Open"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_File_New"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_File_Save"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_File_SaveAll"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_File_SaveOther"/>
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="Any_Menu_any_ExitAPP" />
+                </MenuBarItem>
+                <MenuBarItem x:Uid="SQLE_Menu_Edit">
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Edit_Undo"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Edit_Redo"/>
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Edit_Copy"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Edit_Cut"/>
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Edit_Paste"/>
+                </MenuBarItem>
+                <MenuBarItem x:Uid="SQLE_Menu_Script">
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Script_RunFocus" />
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Script_RunAll" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Script_LookOutput" />
+                    <MenuFlyoutItem x:Uid="SQLE_Menu_Script_SaveOutput" />
+                </MenuBarItem>
+            </MenuBar>
         </Grid>
-        
+        <Grid Grid.Row="2">
+            <Grid x:Name="G_WorkSpace">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
+
+                <TreeView 
+                    x:Name="TV_Connections" 
+                    Background="Green"
+                    AllowDrop="True" />
+                
+                <Grid Grid.Column="1">
+                    <Grid x:Name="TableArea" Background="Blue">
+                        <TextBlock>编辑器区域</TextBlock>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <StackPanel Orientation="Vertical" Background="BlueViolet" Grid.Row="0">
+                        <Canvas x:Name="CV_ERLive">
+                            <TextBlock>ERLive</TextBlock>
+                        </Canvas>
+                    </StackPanel>
+                    <Grid x:Name="OprationArea" Background="Goldenrod" Grid.Row="1">
+                        <TextBlock>语法提示器</TextBlock>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>
