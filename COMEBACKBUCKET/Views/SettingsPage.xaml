@@ -70,12 +70,20 @@
                     x:Uid="Settings_AboutDescription"
                     Margin="{StaticResource XSmallTopMargin}"
                     Style="{ThemeResource BodyTextBlockStyle}" />
-                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
+                <!-- <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" /> -->
+                
+                <TextBlock 
+                    Margin="{StaticResource XSmallTopMargin}"
+                    Style="{ThemeResource BodyTextBlockStyle}" 
+                    Foreground="Silver"
+                    Text="本产品不会上传、存储、披露您的任何个人身份和设备信息以及存储于数据库的任何数据"/>
+                
                 <TextBlock 
                     Margin="{StaticResource XSmallTopMargin}" 
+                    Style="{ThemeResource BodyTextBlockStyle}"
                     FontStyle="Oblique" 
                     Foreground="Red"
-                    Text="本产品正处于 Alpha 测试中，产品稳定性和功能性极差，请使用者知悉！" />
+                    Text="本产品正处于 Pre-Alpha 开发测试中，产品稳定性和功能性极差，请使用者知悉，并谨慎将此版本的产品用于真实生产环境！" />
             </StackPanel>
         </StackPanel>
     </Grid>
