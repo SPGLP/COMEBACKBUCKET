@@ -58,6 +58,7 @@
                     x:Name="TV_Connections" 
                     Background="Green"
                     AllowDrop="True" />
+                
                 <Grid Grid.Column="1">
                     <Grid x:Name="TableArea" Background="Blue">
                         <TextBlock>编辑器区域</TextBlock>

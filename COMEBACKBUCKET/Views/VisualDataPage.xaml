@@ -8,7 +8,8 @@
 
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
-            <RowDefinition Height="48" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
@@ -18,7 +19,44 @@
             Style="{StaticResource PageTitleStyle}" />
 
         <Grid Grid.Row="1">
+            <MenuBar>
+                <MenuBarItem x:Uid="VSD_Menu_Canvas">
+                    <MenuFlyoutItem x:Uid="VSD_Menu_Canvas_New" />
+                    <MenuFlyoutItem x:Uid="VSD_Menu_Canvas_Clear" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="VSD_Menu_Canvas_Refresh" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="Any_Menu_any_ExitAPP" />
+                </MenuBarItem>
+
+                <MenuBarItem x:Uid="VSD_Menu_File">
+                    <MenuFlyoutItem x:Uid="VSD_Menu_File_Open" />
+                    <MenuFlyoutItem x:Uid="VSD_Menu_File_Save" />
+                    <MenuFlyoutItem x:Uid="VSD_Menu_File_SaveOther" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:Uid="VSD_Menu_File_OutputImg" />
+                </MenuBarItem>
+            </MenuBar>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
             
+            <TreeView 
+                x:Name="TV_Connections" 
+                Background="Green"
+                AllowDrop="True" />
+
+            <StackPanel
+                x:Name="SP_CanvasList"
+                Background="DeepSkyBlue"
+                Grid.Column="1">
+
+                <TextBlock Text="画布列表" />
+            </StackPanel>
         </Grid>
         
     </Grid>

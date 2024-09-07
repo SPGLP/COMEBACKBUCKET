@@ -317,4 +317,31 @@
   <data name="SQLE_Menu_Script_SaveOutput.Text" xml:space="preserve">
     <value>导出输出报告</value>
   </data>
+  <data name="VSD_Menu_Canvas.Title" xml:space="preserve">
+    <value>画布</value>
+  </data>
+  <data name="VSD_Menu_Canvas_Clear.Text" xml:space="preserve">
+    <value>删除所有画布</value>
+  </data>
+  <data name="VSD_Menu_Canvas_New.Text" xml:space="preserve">
+    <value>新建画布</value>
+  </data>
+  <data name="VSD_Menu_Canvas_Refresh.Text" xml:space="preserve">
+    <value>刷新所有画布</value>
+  </data>
+  <data name="VSD_Menu_File_Open.Text" xml:space="preserve">
+    <value>打开画布文件</value>
+  </data>
+  <data name="VSD_Menu_File_OutputImg.Text" xml:space="preserve">
+    <value>导出为图像文件</value>
+  </data>
+  <data name="VSD_Menu_File_Save.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="VSD_Menu_File_SaveOther.Text" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="VSD_Menu_File.Title" xml:space="preserve">
+    <value>文件</value>
+  </data>
 </root>
