@@ -51,7 +51,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200" />
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="300" />
                 </Grid.ColumnDefinitions>
 
                 <TreeView 
