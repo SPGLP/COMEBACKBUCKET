@@ -71,32 +71,7 @@
             Style="{StaticResource PageTitleStyle}" />
 
         <Grid Grid.Row="2">
-            <Grid x:Name="G_WorkSpace">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="200" />
-                </Grid.ColumnDefinitions>
-                
-                <TreeView 
-                    x:Name="TV_Connections" 
-                    Background="Green"
-                    AllowDrop="True" />
-                <Grid Grid.Column="1">
-                    <Grid x:Name="TableArea" Background="Blue">
-                        <TextBlock>表区域</TextBlock>
-                    </Grid>
-                </Grid>
-
-                <Grid Grid.Column="2">
-                    <Grid x:Name="OprationArea" Background="Gainsboro">
-                        <TextBlock>操作区域</TextBlock>
-                    </Grid>
-                </Grid>
-                
-
-            </Grid>
-            
+            <Frame x:Name="F_WorkSpace" />
         </Grid>
     </Grid>
 </Page>
