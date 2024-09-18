@@ -15,7 +15,7 @@
 
         <MenuBar x:Name="MB_DM" Grid.Row="1">
             <MenuBarItem x:Uid="DM_Menu_Connection">
-                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" />
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" Click="{x:Bind ViewModel}"/>
                 <MenuFlyoutItem x:Uid="DM_Menu_Connection_Delete" />
                 <MenuFlyoutItem x:Uid="DM_Menu_Connection_Edit" />
                 <MenuFlyoutSeparator />

@@ -16,4 +16,5 @@ public partial class DataManagerViewModel : ObservableRecipient
     {
         WorkComponent = typeof(DM_Main);
     }
+
 }

@@ -37,6 +37,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\COMEBACKBUCKET.Core\COMEBACKBUCKET.Core.csproj" />
+    <ProjectReference Include="ViewModels\ViewInterfacesManager\ViewInterfacesManager.vbproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
@@ -49,6 +50,11 @@
 
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\SubVM\" />
+    <Folder Include="ViewModels\ViewInterfaces\" />
   </ItemGroup>
   
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
