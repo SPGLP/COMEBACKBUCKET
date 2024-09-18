@@ -1,4 +1,4 @@
-﻿Public Interface IConnetion
+﻿Public Interface IConnections
 
     ''' <summary>
     ''' 接口功能：添加新链接
