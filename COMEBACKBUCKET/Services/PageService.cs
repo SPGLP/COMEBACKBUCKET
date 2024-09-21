@@ -1,7 +1,8 @@
 ﻿using COMEBACKBUCKET.Contracts.Services;
 using COMEBACKBUCKET.ViewModels;
+using COMEBACKBUCKET.ViewModels.SubViewModels.DM.DM_NewConnection;
 using COMEBACKBUCKET.Views;
-
+using COMEBACKBUCKET.Views.Components.DM;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 using Microsoft.UI.Xaml.Controls;
@@ -14,11 +15,17 @@ public class PageService : IPageService
 
     public PageService()
     {
+        #region 根本功能部分
         Configure<MainViewModel, MainPage>();
         Configure<DataManagerViewModel, DataManagerPage>();
         Configure<SQLEditorViewModel, SQLEditorPage>();
         Configure<VisualDataViewModel, VisualDataPage>();
         Configure<SettingsViewModel, SettingsPage>();
+        #endregion
+
+        #region DataManager子功能部分
+        Configure<NewConnectionViewModel, DM_NewConnection>();
+        #endregion
     }
 
     public Type GetPageType(string key)

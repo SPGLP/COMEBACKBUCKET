@@ -6,8 +6,9 @@ using COMEBACKBUCKET.Helpers;
 using COMEBACKBUCKET.Models;
 using COMEBACKBUCKET.Services;
 using COMEBACKBUCKET.ViewModels;
+using COMEBACKBUCKET.ViewModels.SubViewModels.DM.DM_NewConnection;
 using COMEBACKBUCKET.Views;
-
+using COMEBACKBUCKET.Views.Components.DM;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
@@ -77,6 +78,8 @@ public partial class App : Application
             services.AddTransient<DataManagerPage>();
             services.AddTransient<MainViewModel>();
             services.AddTransient<MainPage>();
+            services.AddTransient<NewConnectionViewModel>();
+            services.AddTransient<DM_NewConnection>();
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));

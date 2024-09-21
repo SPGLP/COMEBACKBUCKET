@@ -20,6 +20,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Views\Components\DM\DM_Main.xaml" />
+    <None Remove="Views\Components\DM\DM_NewConnection.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +44,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\Components\DM\DM_NewConnection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\Components\DM\DM_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

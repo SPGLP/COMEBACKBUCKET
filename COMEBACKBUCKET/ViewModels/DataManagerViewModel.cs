@@ -8,7 +8,8 @@ namespace COMEBACKBUCKET.ViewModels;
 
 public partial class DataManagerViewModel : ObservableRecipient
 {
-    public Type WorkComponent {get; set;}
+    [ObservableProperty]
+    private Type _workComponent;
 
     public DataManagerViewModel()
     {

@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using COMEBACKBUCKET.Views.Components.DM;
 using ViewInterfacesManager;
 
-namespace COMEBACKBUCKET.ViewModels.SubViewModels.DM.Menu;
+namespace COMEBACKBUCKET.ViewModels;
 
-internal class ConnetionsViewModel : IConnections
+/// <summary>
+/// DM菜单：“连接”的 ViewModel 分部类
+/// </summary>
+public partial class DataManagerViewModel : IConnections
 {
     public void AddNew()
     {
-        // WorkComponent = typeof(DM_Main);
+         WorkComponent = typeof(DM_NewConnection);
     }
     public void CheckAll() => throw new NotImplementedException();
     public void ConnetionOff() => throw new NotImplementedException();
