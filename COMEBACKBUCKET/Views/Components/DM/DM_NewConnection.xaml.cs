@@ -53,6 +53,7 @@ public sealed partial class DM_NewConnection : Page
         Grid.SetColumn(S_NormalSetting, 0);
         Grid.SetRow(S_NormalSetting, 1);
         S_NormalSetting.Margin = new Thickness(0, 30, 0, 0);
+        S_NewConnectionSetting.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
     }
 
     private void ScreenWideMode()
@@ -60,5 +61,7 @@ public sealed partial class DM_NewConnection : Page
         Grid.SetColumn(S_NormalSetting, 1);
         Grid.SetRow(S_NormalSetting, 0);
         S_NormalSetting.Margin = new Thickness(50, 0, 0, 0);
+        S_NormalSetting.VerticalScrollMode = ScrollMode.Auto;
+        S_NewConnectionSetting.VerticalScrollBarVisibility= ScrollBarVisibility.Disabled;
     }
 }

@@ -22,10 +22,11 @@
             Style="{ThemeResource TitleTextBlockStyle}"
             Text="添加新的数据库连接" />
         <ScrollViewer
-            x:Name="S_BasicSetting"
+            x:Name="S_NewConnectionSetting"
             Grid.Row="1"
+            Margin="50,0,0,0"
             VerticalScrollBarVisibility="Auto">
-            <Grid x:Name="G_BasicSetting">
+            <Grid>
 
                 <!--
                 <VisualStateManager.VisualStateGroups>
@@ -72,10 +73,14 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <StackPanel Grid.Row="0" Grid.Column="0">
+                <StackPanel
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Width="Auto"
+                    MinWidth="200">
                     <Grid Margin="0,20,0,0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="100" />
@@ -91,7 +96,7 @@
                         <DropDownButton
                             x:Name="DBUT_DBType"
                             Grid.Column="1"
-                            Width="auto"
+                            Width="Auto"
                             MinWidth="200"
                             HorizontalAlignment="Left">
                             <DropDownButton.Flyout>
