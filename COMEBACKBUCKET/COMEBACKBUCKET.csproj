@@ -15,11 +15,12 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <DefaultLanguage>zh-hans</DefaultLanguage>
-    <AssemblyVersion>0.1.15.0</AssemblyVersion>
-    <FileVersion>0.1.15.0</FileVersion>
+    <AssemblyVersion>0.1.16.0</AssemblyVersion>
+    <FileVersion>0.1.16.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Views\Components\DM\DM_Main.xaml" />
+    <None Remove="Views\Components\DM\DM_NC_MySQL.xaml" />
     <None Remove="Views\Components\DM\DM_NewConnection.xaml" />
   </ItemGroup>
 
@@ -44,6 +45,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\Components\DM\DM_NC_MySQL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\Components\DM\DM_NewConnection.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

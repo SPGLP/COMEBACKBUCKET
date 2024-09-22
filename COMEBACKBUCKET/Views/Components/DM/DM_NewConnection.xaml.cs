@@ -36,7 +36,7 @@ public sealed partial class DM_NewConnection : Page
 
     private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
     {
-        if (e.NewSize.Width < 700) // 设定一个阈值
+        if (e.NewSize.Width < 750) // 设定一个阈值
         {
             // VisualStateManager.GoToState(this, "Narrow", false);
             ScreenNarrowMode();

@@ -150,31 +150,7 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     VerticalScrollBarVisibility="Auto">
-                    <Grid>
-                        <StackPanel>
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                            <TextBlock Text="Right Grid Content" />
-                        </StackPanel>
-                    </Grid>
-
+                    <Frame SourcePageType="{x:Bind ViewModel.DbTypePage}" />
                 </ScrollViewer>
             </Grid>
         </ScrollViewer>
