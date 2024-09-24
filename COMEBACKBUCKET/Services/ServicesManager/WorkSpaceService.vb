@@ -1,4 +1,4 @@
-Public Class WorkSpaceServices
+Public Class WorkSpaceService
     Public Sub AddNew()
 
     End Sub

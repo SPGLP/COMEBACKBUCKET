@@ -98,17 +98,18 @@
                             Grid.Column="1"
                             Width="Auto"
                             MinWidth="200"
-                            HorizontalAlignment="Left">
+                            HorizontalAlignment="Left"
+                            Content="{x:Bind ViewModel.DbTypeName, Mode=OneWay}">
                             <DropDownButton.Flyout>
                                 <MenuFlyout Placement="Bottom">
-                                    <MenuFlyoutItem Text="MySQL" />
-                                    <MenuFlyoutItem Text="PostgreSQL" />
-                                    <MenuFlyoutItem Text="Access" />
-                                    <MenuFlyoutItem Text="OpenGauss" />
+                                    <MenuFlyoutItem Click="{x:Bind ViewModel.DBUTSelectMySQL, Mode=OneWay}" Text="MySQL" />
+                                    <MenuFlyoutItem Click="{x:Bind ViewModel.DBUTSelectPostgresSQL, Mode=OneWay}" Text="PostgreSQL" />
+                                    <MenuFlyoutItem Click="{x:Bind ViewModel.DBUTSelectOracle, Mode=OneWay}" Text="Oracle" />
+                                    <MenuFlyoutItem Click="{x:Bind ViewModel.DBUTSelectSQLServer, Mode=OneWay}" Text="SQL Server" />
+                                    <MenuFlyoutItem Click="{x:Bind ViewModel.DBUTSelectOpenGauss, Mode=OneWay}" Text="OpenGauss" />
                                     <!-- Comming soon
-                                    <MenuFlyoutItem Text="SQL Server" />
                                     <MenuFlyoutItem Text="SQLite" />
-                                    <MenuFlyoutItem Text="Oracle" />
+                                    <MenuFlyoutItem Text="Access" />
                                     <MenuFlyoutItem Text="人大金仓" />
                                     <MenuFlyoutItem Text="达梦" Click="OnDatabaseSelected"/>
                                     <MenuFlyoutItem Text="海量数据库Vastbase" Click="OnDatabaseSelected"/>
@@ -150,7 +151,7 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     VerticalScrollBarVisibility="Auto">
-                    <Frame SourcePageType="{x:Bind ViewModel.DbTypePage}" />
+                    <Frame SourcePageType="{x:Bind ViewModel.DbTypePage, Mode=OneWay}" />
                 </ScrollViewer>
             </Grid>
         </ScrollViewer>
@@ -158,19 +159,21 @@
             Grid.Row="2"
             HorizontalAlignment="Right"
             Orientation="Horizontal">
+
             <Button
                 x:Name="Finish"
                 Width="150"
                 Content="确定"
                 Style="{ThemeResource AccentButtonStyle}" />
+
             <Button
                 x:Name="Cancel"
                 Width="150"
                 Margin="15,0,0,0"
+                Click="{x:Bind ViewModel.BUTCancelClick}"
                 Content="取消"
                 Style="{ThemeResource DefaultButtonStyle}" />
+
         </StackPanel>
-
-
     </Grid>
 </Page>

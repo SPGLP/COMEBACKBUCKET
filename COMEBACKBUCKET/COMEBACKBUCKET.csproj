@@ -21,6 +21,10 @@
   <ItemGroup>
     <None Remove="Views\Components\DM\DM_Main.xaml" />
     <None Remove="Views\Components\DM\DM_NC_MySQL.xaml" />
+    <None Remove="Views\Components\DM\DM_NC_OpenGauss.xaml" />
+    <None Remove="Views\Components\DM\DM_NC_Oracle.xaml" />
+    <None Remove="Views\Components\DM\DM_NC_PostgresSQL.xaml" />
+    <None Remove="Views\Components\DM\DM_NC_SQLServer.xaml" />
     <None Remove="Views\Components\DM\DM_NewConnection.xaml" />
   </ItemGroup>
 
@@ -45,6 +49,18 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\Components\DM\DM_NC_OpenGauss.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Components\DM\DM_NC_SQLServer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Components\DM\DM_NC_Oracle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Components\DM\DM_NC_PostgresSQL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\Components\DM\DM_NC_MySQL.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

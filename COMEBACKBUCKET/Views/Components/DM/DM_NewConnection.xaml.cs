@@ -64,4 +64,5 @@ public sealed partial class DM_NewConnection : Page
         S_NormalSetting.VerticalScrollMode = ScrollMode.Auto;
         S_NewConnectionSetting.VerticalScrollBarVisibility= ScrollBarVisibility.Disabled;
     }
+
 }
