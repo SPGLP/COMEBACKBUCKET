@@ -20,7 +20,7 @@ Public Class ConnectionItemService
                 .DBCilent = db,
                 .Name = item.Name,
                 .DBConf = item.DBConf,
-                .DBType = item.DBType,
+                .DBType = item.DBType
             }
             initACService.Flush(newActiveItem)
             workSpace.ActiveItems.Add(newActiveItem)

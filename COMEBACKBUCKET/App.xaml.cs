@@ -80,6 +80,7 @@ public partial class App : Application
             services.AddTransient<MainPage>();
             services.AddTransient<NewConnectionViewModel>();
             services.AddTransient<DM_NewConnection>();
+            services.AddTransient<DM_NC_MySQL>();
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));

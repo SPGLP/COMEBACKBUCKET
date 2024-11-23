@@ -1,4 +1,6 @@
-﻿using COMEBACKBUCKET.Models.MessagePack;
+﻿using System.Configuration;
+using System.Diagnostics;
+using COMEBACKBUCKET.Models.MessagePack;
 using COMEBACKBUCKET.Views.Components.DM;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
@@ -8,10 +10,10 @@ namespace COMEBACKBUCKET.ViewModels.SubViewModels.DM.DM_NewConnection;
 public partial class NewConnectionViewModel : ObservableRecipient
 {
     [ObservableProperty]
-    private Type _dbTypePage;
+    private Type? _dbTypePage;
 
     [ObservableProperty]
-    private string _dbTypeName;
+    private string? _dbTypeName;
 
     public NewConnectionViewModel()
     {
@@ -49,9 +51,29 @@ public partial class NewConnectionViewModel : ObservableRecipient
         DbTypePage = typeof(DM_NC_OpenGauss);
     }
 
+    public void BUTOKClick()
+    {
+        if(DbTypeName == "MySQL")
+        {
+            var item = CreateMySQLConnectionItem();
+            Debug.Print(item.ToString());
+            // TODO: 调用消息机制返回 item 至主界面列表
+        }
+    }
+
     public void BUTCancelClick()
     {
         WeakReferenceMessenger.Default.Send(new NavMessage(typeof(DM_Main)));
     }
 
+
+
+    //protected override void OnActivated()
+    //{
+    //    base.OnActivated();
+    //    WeakReferenceMessenger.Default.Register<NewMySQLMessage>(this, (r, m) =>
+    //    {
+
+    //    });
+    //}
 }

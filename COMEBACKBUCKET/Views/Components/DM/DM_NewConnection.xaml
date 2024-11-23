@@ -163,6 +163,7 @@
             <Button
                 x:Name="Finish"
                 Width="150"
+                Click="{x:Bind ViewModel.BUTOKClick}"
                 Content="确定"
                 Style="{ThemeResource AccentButtonStyle}" />
 

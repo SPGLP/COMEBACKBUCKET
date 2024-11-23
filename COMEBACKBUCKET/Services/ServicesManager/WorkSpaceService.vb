@@ -1,5 +1,6 @@
 Public Class WorkSpaceService
-    Public Sub AddNew()
+
+    Public Sub AddNewMySQL()
 
     End Sub
 End Class

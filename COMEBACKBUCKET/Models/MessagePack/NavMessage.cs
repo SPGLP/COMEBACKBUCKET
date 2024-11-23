@@ -1,4 +1,5 @@
 ﻿namespace COMEBACKBUCKET.Models.MessagePack;
+
 internal class NavMessage
 {
     public Type TargetPage

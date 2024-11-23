@@ -10,7 +10,7 @@ namespace COMEBACKBUCKET.ViewModels;
 public partial class DataManagerViewModel : ObservableRecipient
 {
     [ObservableProperty]
-    private Type _workComponent;
+    private Type? _workComponent;
 
     public DataManagerViewModel()
     {

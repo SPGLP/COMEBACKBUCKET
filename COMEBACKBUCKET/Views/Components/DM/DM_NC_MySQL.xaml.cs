@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using COMEBACKBUCKET.ViewModels.SubViewModels.DM.DM_NewConnection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -22,8 +23,11 @@ namespace COMEBACKBUCKET.Views.Components.DM;
 /// </summary>
 public sealed partial class DM_NC_MySQL : Page
 {
+    public NewConnectionViewModel ViewModel { get; set; }
+
     public DM_NC_MySQL()
     {
+        ViewModel = App.GetService<NewConnectionViewModel>();
         this.InitializeComponent();
     }
 }
