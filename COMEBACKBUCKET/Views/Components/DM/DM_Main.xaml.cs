@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using COMEBACKBUCKET.ViewModels.SubViewModels.DM.Main;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -10,6 +11,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using SqlSugar;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -22,8 +24,11 @@ namespace COMEBACKBUCKET.Views.Components.DM;
 /// </summary>
 public sealed partial class DM_Main : Page
 {
+    public DMMainViewModel ViewModel { get; set; }
+
     public DM_Main()
     {
+        ViewModel = App.GetService<DMMainViewModel>();
         this.InitializeComponent();
     }
 }

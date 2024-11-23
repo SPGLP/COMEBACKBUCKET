@@ -7,6 +7,7 @@ using COMEBACKBUCKET.Models;
 using COMEBACKBUCKET.Services;
 using COMEBACKBUCKET.ViewModels;
 using COMEBACKBUCKET.ViewModels.SubViewModels.DM.DM_NewConnection;
+using COMEBACKBUCKET.ViewModels.SubViewModels.DM.Main;
 using COMEBACKBUCKET.Views;
 using COMEBACKBUCKET.Views.Components.DM;
 using Microsoft.Extensions.DependencyInjection;
@@ -78,9 +79,13 @@ public partial class App : Application
             services.AddTransient<DataManagerPage>();
             services.AddTransient<MainViewModel>();
             services.AddTransient<MainPage>();
+            services.AddTransient<DMMainViewModel>();
+            services.AddTransient<DM_Main>();
             services.AddTransient<NewConnectionViewModel>();
             services.AddTransient<DM_NewConnection>();
+            services.AddTransient<NCMySQLViewModel>();
             services.AddTransient<DM_NC_MySQL>();
+            
 
             // Configuration
             services.Configure<LocalSettingsOptions>(context.Configuration.GetSection(nameof(LocalSettingsOptions)));

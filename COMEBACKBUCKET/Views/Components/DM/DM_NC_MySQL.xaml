@@ -32,7 +32,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLHost, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Server, Mode=TwoWay}" />
         </Grid>
         <Grid Margin="0,20,0,0">
             <Grid.ColumnDefinitions>
@@ -52,7 +52,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLName, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Datebase, Mode=TwoWay}" />
 
         </Grid>
         <Grid Margin="0,20,0,0">
@@ -73,7 +73,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLUser, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Username, Mode=TwoWay}" />
 
         </Grid>
         <Grid Margin="0,20,0,0">
@@ -94,7 +94,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLPassword, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Password, Mode=TwoWay}" />
 
         </Grid>
         <TextBlock Margin="0,30,0,0" Style="{ThemeResource SubtitleTextBlockStyle}">高级设置</TextBlock>
@@ -116,7 +116,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLPort, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Port, Mode=TwoWay}" />
 
         </Grid>
         <Grid Margin="0,20,0,0">
@@ -137,7 +137,7 @@
                 Width="Auto"
                 MinWidth="200"
                 HorizontalAlignment="Left"
-                Text="{x:Bind ViewModel.MySQLCharset, Mode=TwoWay}" />
+                Text="{x:Bind ViewModel.Charset, Mode=TwoWay}" />
 
         </Grid>
         <Grid Margin="0,20,0,0">
@@ -146,7 +146,7 @@
                 Grid.Column="1"
                 HorizontalAlignment="Left"
                 Content="启用bulkcopy"
-                IsChecked="{x:Bind ViewModel.MySQLAllowLoadLocalInfile, Mode=TwoWay}" />
+                IsChecked="{x:Bind ViewModel.AllowLoadLocalInfile, Mode=TwoWay}" />
         </Grid>
     </StackPanel>
 </Page>

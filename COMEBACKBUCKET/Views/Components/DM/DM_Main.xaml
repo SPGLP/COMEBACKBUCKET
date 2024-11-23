@@ -19,7 +19,8 @@
         <TreeView
             x:Name="TV_Connections"
             AllowDrop="True"
-            Background="Green" />
+            Background="Green"
+            ItemsSource="{x:Bind ViewModel.ConnectionItems, Mode=TwoWay}" />
 
         <Grid Grid.Column="1">
             <Grid x:Name="TableArea" Background="Blue">

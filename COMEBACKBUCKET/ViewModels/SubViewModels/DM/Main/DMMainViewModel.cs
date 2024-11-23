@@ -1,4 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using COMEBACKBUCKET.Models.MessagePack;
 using COMEBACKBUCKET.Views.Components.DM;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -6,42 +12,37 @@ using CommunityToolkit.Mvvm.Messaging;
 
 using ModelsManager;
 
-namespace COMEBACKBUCKET.ViewModels;
+namespace COMEBACKBUCKET.ViewModels.SubViewModels.DM.Main;
 
-public partial class DataManagerViewModel : ObservableRecipient
+public partial class DMMainViewModel : ObservableRecipient
 {
     private readonly WorkSpace workSpace = new();
-
-    [ObservableProperty]
-    private Type? _workComponent;
 
     public ObservableCollection<ConnectionItem> ConnectionItems
     {
         get; set;
     }
 
-    public DataManagerViewModel()
+    public DMMainViewModel()
     {
         IsActive = true;
-        WorkComponent = typeof(DM_Main);
         ConnectionItems = workSpace.ConnectionItems;
     }
 
     protected override void OnActivated()
     {
-        WeakReferenceMessenger.Default.Register<NavMessage>(this, (r, m) => WorkComponent = m.TargetPage);
-        WeakReferenceMessenger.Default.Register<NewConnetionMessage, string>(this, "AddConnetion", (r, m) =>
+        WeakReferenceMessenger.Default.Register<NewConnetionMessage, string>(this, "AddConnection", (r, m) =>
         {
             if (ConnectionItems != null)
             {
                 ConnectionItems.Add(m.ConnectionItem);
+                Debug.Print("已添加链接");
             }
         });
     }
 
     protected override void OnDeactivated()
     {
-        WeakReferenceMessenger.Default.Unregister<NavMessage>(this);
+        WeakReferenceMessenger.Default.Unregister<NewConnetionMessage>(this);
     }
-
 }

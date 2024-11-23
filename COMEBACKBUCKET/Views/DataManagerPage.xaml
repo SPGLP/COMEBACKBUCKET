@@ -15,7 +15,7 @@
 
         <MenuBar x:Name="MB_DM" Grid.Row="1">
             <MenuBarItem x:Uid="DM_Menu_Connection">
-                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" Click="{x:Bind ViewModel.AddNew}"/>
+                <MenuFlyoutItem x:Uid="DM_Menu_Connection_AddNew" Click="{x:Bind ViewModel.AddNew}" />
                 <MenuFlyoutItem x:Uid="DM_Menu_Connection_Delete" />
                 <MenuFlyoutItem x:Uid="DM_Menu_Connection_Edit" />
                 <MenuFlyoutSeparator />
@@ -64,14 +64,14 @@
                 <MenuFlyoutItem x:Uid="DM_Menu_Filter_ByText" />
             </MenuBarItem>
         </MenuBar>
-        
+
         <TextBlock
-            Grid.Row="0"
             x:Uid="DataManager_Title"
+            Grid.Row="0"
             Style="{StaticResource PageTitleStyle}" />
 
         <Grid Grid.Row="2">
-            <Frame x:Name="F_WorkSpace" SourcePageType="{x:Bind ViewModel.WorkComponent, Mode=OneWay}"/>
+            <Frame x:Name="F_WorkSpace" SourcePageType="{x:Bind ViewModel.WorkComponent, Mode=OneWay}" />
         </Grid>
     </Grid>
 </Page>

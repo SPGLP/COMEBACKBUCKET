@@ -23,11 +23,11 @@ namespace COMEBACKBUCKET.Views.Components.DM;
 /// </summary>
 public sealed partial class DM_NC_MySQL : Page
 {
-    public NewConnectionViewModel ViewModel { get; set; }
+    public NCMySQLViewModel ViewModel { get; set; }
 
     public DM_NC_MySQL()
     {
-        ViewModel = App.GetService<NewConnectionViewModel>();
+        ViewModel = App.GetService<NCMySQLViewModel>();
         this.InitializeComponent();
     }
 }

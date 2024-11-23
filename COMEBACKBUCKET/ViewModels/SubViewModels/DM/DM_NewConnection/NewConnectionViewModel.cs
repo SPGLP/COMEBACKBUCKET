@@ -55,9 +55,10 @@ public partial class NewConnectionViewModel : ObservableRecipient
     {
         if(DbTypeName == "MySQL")
         {
-            var item = CreateMySQLConnectionItem();
-            Debug.Print(item.ToString());
-            // TODO: 调用消息机制返回 item 至主界面列表
+            var item = WeakReferenceMessenger.Default.Send(new NewConnetionMessage(), "NewMySQL");
+            //Debug.Print(item.Response.ToString());
+            WeakReferenceMessenger.Default.Send(new NewConnetionMessage() { ConnectionItem = item }, "AddConnection");      // 信使传递添加连接至树状控件
+            WeakReferenceMessenger.Default.Send(new NavMessage(typeof(DM_Main)));                                           // 信使传递返回DM_Main
         }
     }
 
